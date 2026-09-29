@@ -56,13 +56,18 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="pt-8 border-t border-bite-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-bite-white/40 text-sm font-light">
-            © {new Date().getFullYear()} Bitefast Burger House. Todos os direitos reservados.
-          </p>
-          <div className="flex gap-6 text-sm text-bite-white/40 font-light">
-            <a href="#" className="hover:text-bite-white">Termos de Uso</a>
-            <a href="#" className="hover:text-bite-white">Privacidade</a>
+        <div className="pt-8 border-t border-bite-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+          <div className="flex flex-col gap-2">
+            <p className="text-bite-white/40 text-sm font-light">
+              © {new Date().getFullYear()} Bitefast Burger House. Todos os direitos reservados.
+            </p>
+            <p className="text-bite-white/40 text-sm font-light">
+              Design e Desenvolvimento por <a href="#" target="_blank" rel="noopener noreferrer" className="text-bite-white hover:text-bite-cheddar font-medium transition-colors">Grace Code Systems</a>
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-6 text-sm text-bite-white/40 font-light">
+            <a href="#" className="hover:text-bite-white transition-colors">Termos de Uso</a>
+            <a href="#" className="hover:text-bite-white transition-colors">Privacidade</a>
           </div>
         </div>
       </div>

@@ -18,7 +18,7 @@ export default function HeroImageSequence() {
       const img = new Image();
       const num = i.toString().padStart(3, "0");
       img.src = `/images/sequence/frame-${num}.jpg`;
-      
+
       img.onload = () => {
         loadedCount++;
         if (loadedCount === TOTAL_FRAMES) {
@@ -34,7 +34,7 @@ export default function HeroImageSequence() {
           setLoaded(true);
         }
       };
-      
+
       loadedImages.push(img);
     }
   }, []);
